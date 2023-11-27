@@ -46,8 +46,8 @@ def user_logout(request):
     return redirect(user_login)
 
 def add_book(request):
-    if request.methods=='POST':
-        d=bookfrom(request.POST)
+    if request.method=='POST':
+        d=bookform(request.POST)
         if d.is_valid():
             d.save()
             return redirect(view_book)

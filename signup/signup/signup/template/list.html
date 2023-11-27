@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    {% block content %}
+    <table>
+    {% for i in book %}
+    <tr>
+
+        <td><img src="{{i.image}}" alt="" width="260" height="250"></td>
+        <td><h3>{{i.title}}</h3></td>
+        <td><h3>{{i.author}}</h3></td>
+
+    </tr>
+    {% endfor %}
+    </table>
+    {% endblock %}
     
 </body>
 </html>
