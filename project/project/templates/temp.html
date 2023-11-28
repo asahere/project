@@ -1,0 +1,38 @@
+{% load static %}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>hello</h1>
+    <!-- <h2>{{name}}</h2>
+    <h3>{{age}}</h3> -->
+    <table>
+        {% for i in d %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+    </tr>
+    {% endfor %} 
+    </table>
+    
+    
+  
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore deleniti quae perspiciatis eum esse in neque eligendi fugiat similique cupiditate. Odit distinctio minima, libero recusandae non natus minus at nostrum.</p>
+    <img src="{% static 'image/neom.jpg' %}" alt="" width="300" height="350">
+    <a href="{% url 'index' %}">
+
+    next</a>
+
+</body>
+</html>
