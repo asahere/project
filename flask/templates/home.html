@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/a.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{{url_for('hello world')}}">home</a>
+    <a href="{{url_for('hello')}}">index</a>
+
+    {% block content %}
+    <h1>hello</h1>
+    <img src="{{url_for('static',filename='images/Untitled.jpeg')}}"alt="">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quae ratione distinctio. Perspiciatis pariatur commodi ipsa mollitia saepe. Consectetur molestias voluptatibus ullam quaerat aut temporibus cum amet accusamus fugit eius?</p>
+   
+    {% endblock %}
+</body>
+</html>
